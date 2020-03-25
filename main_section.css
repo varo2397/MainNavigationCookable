@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.video-bg-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.video-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .video-bg {
+      width: 100%;
+      height: auto;
+    }
+}
+  
+@media (max-aspect-ratio: 16/9) {
+    .video-bg {
+      width: auto;
+      height: 100%;
+    }
+}
+
+
+.active-icon {
+    background-color: #d23e00 !important;
+    height: 50px !important;
+    width: 50px !important;
+    left: -40px !important;
+}
+
+.center-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border-color: white;
+    border-width: 2px;
+    background-color: rgba(0, 0, 0, 1);
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    top: -25px;
+    left: -35px;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.bg-history {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-left-color: white;
+    border-left-width: 2px;
+    border-style: none none none solid;
+}
+
+.book-bottom {
+    top: 95.5%;
+    left: 0;
+    width: 100%;
+}
+
+
+.book-bottom-left {
+    width: 50%;
+    height: 15px;
+    border-top: 5px solid #fff;
+    border-color: white;
+    border-radius: 0px 30px 0px 0px;
+    border-style: solid solid none none ;
+}
+.book-bottom-right {
+    width: 50%;
+    height: 15px;
+    border-top: 5px solid #fff;
+    border-color: white;
+    border-radius: 30px 0px 0px 0px;
+    border-style: solid none none solid ;
+}
+
+.progress-text {
+    font-size: 16px ;
+}
+
+.bottom-text {
+    font-size: 24px ;
+}
+
+.step-details-container {
+    bottom: 100%;
+    width: 100%;
+}
+
+
+.step-details {
+    background-color: rgba(0, 0, 0, 0.3);   
+    border-bottom-color: #ff3bdf;
+    border-style: none none solid none;
+}
+
+@media only screen and (max-width: 780px) {
+    .progress-text {
+        font-size: 12px ;
+    }
+
+    .bottom-text {
+        font-size: 12px ;
+    }
+
+    .step-details-container {
+        height: 30vh;
+        width: 100%;
+    }
+}
+
+
+.progress-default {
+    height: 5px;
+    width: 100%;
+    padding-right: 4px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.progress-done {
+    background-color: #fff;
+}
+
+.progress-process {
+    background-color: #ff3bdf;
+    width: 50% !important;
+}
+
+.progress-missing {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 50% !important;
+}
+
+.gradient-top {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.01));
+    position: absolute;
+    width: 100vw;
+    height: 15vh;
+}
+
+.gradient-bottom {
+    background-image: linear-gradient(rgba(0,0,0,0.01), #000);
+}
+
+.bottom-controls {
+    color: gray;
+}
+
+
+
