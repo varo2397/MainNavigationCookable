@@ -38,8 +38,8 @@ body {
 
 
 .center-icon {
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     border-radius: 50%;
     border-color: white;
     border-width: 2px;
@@ -49,8 +49,8 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
-    top: -10px;
-    left: -35px;
+    top: -5px;
+    left: -15px;
 }
 
 
@@ -58,7 +58,7 @@ body {
     background-color: #d23e00 !important;
     height: 50px !important;
     width: 50px !important;
-    left: -40px !important;
+    left: -28px !important;
     font-size: 20px;
     top: -35px !important;
 }
@@ -78,13 +78,6 @@ body {
     border-style: none none none solid;
     margin-top: 10vh;
 }
-
-.book-bottom {
-    top: 95.5%;
-    left: 0;
-    width: 100%;
-}
-
 
 .book-bottom-left {
     width: 50%;
@@ -117,6 +110,9 @@ body {
 .step-details-container {
     bottom: 100%;
     width: 100%;
+    max-height: 400px;
+    padding-left: 0px;
+    margin-bottom: 1.5rem;
 }
 
 .step-details {
@@ -124,10 +120,11 @@ body {
     border-bottom-color: #ff3bdf;
     border-style: none none solid none;
     border-width: 1px;
+    height: 100%;
 }
 
 .title-text {
-    font-size: 20px;;
+    font-size: 16px;;
 }
 
 .margin-header {
@@ -136,7 +133,7 @@ body {
 }
 
 .margin-optins {
-    margin-right: 0.20rem;
+    padding-right: 1rem;
 }
 
 .padding-footer {
@@ -146,7 +143,7 @@ body {
 }
 
 .margin-progress {
-    margin-bottom: 1.0rem;
+    margin-bottom: 0.25rem;
 }
 
 .fa-lg {
@@ -158,11 +155,26 @@ body {
 }
 
 .margin-text-optins {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
 }
 .padding-optins {
     padding-top: 1.5rem;
     padding-bottom: 0.5rem;
+}
+.optins-bar {
+    max-width: 260px;
+}
+
+.padding-instructional {
+    padding: 1.5rem;
+}
+
+.instructional-title {
+    font-size: 16px;
+}
+
+.instructional-text {
+    font-size: 14px;
 }
 
 @media only screen and (max-width: 780px) {
@@ -177,6 +189,9 @@ body {
     .step-details-container {
         height: 30vh;
         width: 100%;
+        max-height: 200px;
+        padding-left: 0px;
+        margin-bottom: 0rem;
     }
 
     .bg-history {
@@ -193,7 +208,7 @@ body {
     }
 
     .title-text {
-        font-size: 16px;;
+        font-size: 12px;;
     }
 
     .margin-optins {
@@ -202,15 +217,10 @@ body {
     }
 
     .padding-footer {
-        padding-left: 3rem;
-        padding-right: 3rem;
-        padding-bottom: 0rem;
+        padding-left: 1.5rem;
+        padding-right: 2.5rem;
+        padding-bottom: 0px;
     }
-    
-    .margin-progress {
-        margin-bottom: 1rem;
-    }
-
 
     
     .center-icon {
@@ -226,14 +236,14 @@ body {
         align-items: center;
         color: white;
         top: -0px !important;
-        left: -27px;
+        left: -15px;
     }
 
     .active-icon {
         background-color: #d23e00 !important;
         height: 30px !important;
         width: 30px !important;
-        left: -30px !important;
+        left: -15px !important;
         font-size: 16px;
         top: -20px !important;
     }
@@ -247,7 +257,24 @@ body {
         padding-bottom: 0.5rem;
     }
     
+    .margin-header {
+        margin-top: 0.5rem;
+        padding-left: 0rem;
+    }
+
+    .padding-instructional {
+        padding: 0.5rem;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    .instructional-title {
+        font-size: 12px;
+    }
     
+    .instructional-text {
+        font-size: 10px;
+    }
 }
 
 
