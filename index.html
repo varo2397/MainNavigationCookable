@@ -22,8 +22,11 @@
 </head>
 
 <body>
+    <div class="pop-up-video-bg-wrapper" id="popUp">
+        <video class="pop-video" loop muted autoplay src="Beer_Pour_Videvo.mp4"></video>
+    </div>
     <div class="video-bg-wrapper">
-        
+
         <!-- <video loop muted autoplay src="Beer_Pour_Videvo.mp4" class="video-bg"></video> -->
         <video loop muted autoplay src="https://res.cloudinary.com/varo2397/video/upload/v1585155412/cookable/Beer_Pour_Videvo_vamm8p.mp4" class="video-bg"></video>
     </div>
@@ -31,6 +34,7 @@
         <div class="gradient-top">
 
         </div>
+
         <div class="container-fluid d-flex flex-grow-1 flex-column">
 
             <!-- Header -->
@@ -47,25 +51,27 @@
                 <div class="col-md-12 col-sm-12 col-xs-12 margin-optins">
                     <div class=" row justify-content-end align-items-end margin-optins">
                         <div class="col-md-2 col-sm-3 col-xs-3 margin-optins">
-                            <div class="col-md-12 col-sm-12 col-xs-12 bg-history text-center pt-4 pb-2 ">
-                                <div class="relative mb-5">
+                            <div class="col-md-12 col-sm-12 col-xs-12 bg-history text-center padding-optins ">
+                                <div class="relative margin-text-optins">
                                     <div class="center-icon active-icon absolute ">
-                                        <i class="fa fa-lightbulb fa-lg"></i>
+                                        <i class="fa fa-lightbulb"></i>
                                     </div>
-                                    <p class="text-white text-left ml-4 font-italic">Watch</p>
+                                    <p class="text-white text-left ml-4 font-italic optins-text">Watch</p>
                                 </div>
 
-                                <div class="relative none-display mb-5">
+                                <div class="relative  margin-text-optins">
                                     <div class="center-icon absolute ">
                                         <i class="fa fa-volume-up fa-lg"></i>
                                     </div>
-                                    <p class="text-white text-left ml-4 font-italic">Set the time to 20 minutes</p>
+                                    <p class="text-white text-left ml-4 font-italic optins-text">Set the time to 20
+                                        minutes</p>
                                 </div>
                                 <div class="relative none-display">
                                     <div class="center-icon absolute ">
                                         <i class="fa fa-play fa-lg"></i>
                                     </div>
-                                    <p class="text-white text-left ml-4 font-italic">Set the time to 20 minutes</p>
+                                    <p class="text-white text-left ml-4 font-italic optins-text">Show me a video about
+                                        Grace and Wings</p>
                                 </div>
                             </div>
                             <div class="d-flex flex-row col-md-12 col-sm-12 col-xs-12 " style="padding: 0px;">
@@ -79,15 +85,17 @@
             <!-- Steps -->
 
             <!-- Footer -->
-            <div class="row fixed-bottom gradient-bottom padding-footer">
+            <div class="row fixed-bottom gradient-bottom padding-footer" id="footer">
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="row justify-content-space-evenly margin-progress">
 
                         <div class="d-flex flex-column pr-2" style="width: 10%;">
 
-                            <div class="absolute step-details-container overflow-auto col-md-3 col-sm-4 col-xs-4  mb-4">
+                            <div
+                                class="absolute step-details-container overflow-auto col-md-3 col-sm-4 col-xs-4  mb-4 p-0">
                                 <div class="step-details col-md-12 col-sm-12 col-xs-12 p-4">
-                                    <p class="text-white font-weight-bold">MISE EN PLACE&nbsp; <span>- Gather materials</span></p>
+                                    <p class="text-white font-weight-bold">MISE EN PLACE&nbsp; <span>- Gather
+                                            materials</span></p>
                                     <p class="text-white font-weight-light">
                                         Line the sheet tray with the parchment.
                                         Place wings on the parchment. Season both
@@ -140,7 +148,7 @@
                             <p class="bottom-controls pl-2 bottom-text">PREVIEW VIDEO</p>
                         </div>
                         <div class="d-flex flex-row w-50 justify-content-end align-items-center">
-                            <p class="bottom-controls pr-2 bottom-text">GATHER INGREDIENTS</p>
+                            <p class="bottom-controls pr-2 bottom-text" id="showPopUp">GATHER INGREDIENTS</p>
                             <p><i class="fa fa-chevron-right text-white bottom-text"></i></p>
                         </div>
                     </div>
@@ -161,6 +169,17 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+    <script>
+        const clickElement = document.querySelector('#showPopUp');
+        const footer = document.querySelector('#footer');
+        const popUp = document.querySelector('#popUp')
+        clickElement.addEventListener('click', (event) => {
+            popUp.style.display = 'flex';
+            footer.style.filter = 'blur(1px)';
+            footer.style.zIndex = '-100';
+        })
+    </script>
 </body>
 
 </html>
