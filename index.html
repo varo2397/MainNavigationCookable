@@ -4,21 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="main_section.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/9dcba8a84f.js" crossorigin="anonymous"></script>
+
     <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all"
         rel="stylesheet">
     <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all"
         rel="stylesheet">
     <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="main_section.css" />
     <title>Document</title>
 </head>
 
 <body>
     <div class="video-bg-wrapper">
+        
+        <!-- <video loop muted autoplay src="Beer_Pour_Videvo.mp4" class="video-bg"></video> -->
         <video loop muted autoplay src="https://res.cloudinary.com/varo2397/video/upload/v1585155412/cookable/Beer_Pour_Videvo_vamm8p.mp4" class="video-bg"></video>
     </div>
     <div class="h-100 w-100 absolute">
@@ -28,8 +34,8 @@
         <div class="container-fluid d-flex flex-grow-1 flex-column">
 
             <!-- Header -->
-            <div class="row mt-3">
-                <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="row margin-header">
+                <div class="col-md-12 col-sm-12 col-xs-12 title-text">
                     <p class="text-white font-weight-bold">Crispiest Juiciest Oven Baked Wings <span
                             class="font-italic font-weight-light">- by Grace Choi</span></p>
                 </div>
@@ -38,23 +44,31 @@
 
             <!-- Steps -->
             <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="row justify-content-end">
-                        <div class="col-md-2 col-sm-2 col-xs-2 bg-history text-center mr-5">
-                            <div class="relative mb-5">
-                                <div class="center-icon active-icon absolute ">
-                                    <i class="fa fa-play fa-lg"></i>
+                <div class="col-md-12 col-sm-12 col-xs-12 margin-optins">
+                    <div class=" row justify-content-end align-items-end margin-optins">
+                        <div class="col-md-2 col-sm-3 col-xs-3 margin-optins">
+                            <div class="col-md-12 col-sm-12 col-xs-12 bg-history text-center pt-4 pb-2 ">
+                                <div class="relative mb-5">
+                                    <div class="center-icon active-icon absolute ">
+                                        <i class="fa fa-lightbulb fa-lg"></i>
+                                    </div>
+                                    <p class="text-white text-left ml-4 font-italic">Watch</p>
                                 </div>
-                                <p class="text-white">Say: Cookable</p>
-                            </div>
 
-                            <div class="relative">
-                                <div class="center-icon absolute ">
-                                    <i class="fa fa-volume-up fa-lg"></i>
+                                <div class="relative none-display mb-5">
+                                    <div class="center-icon absolute ">
+                                        <i class="fa fa-volume-up fa-lg"></i>
+                                    </div>
+                                    <p class="text-white text-left ml-4 font-italic">Set the time to 20 minutes</p>
                                 </div>
-                                <p class="text-white">Set the time to 20 minutes</p>
+                                <div class="relative none-display">
+                                    <div class="center-icon absolute ">
+                                        <i class="fa fa-play fa-lg"></i>
+                                    </div>
+                                    <p class="text-white text-left ml-4 font-italic">Set the time to 20 minutes</p>
+                                </div>
                             </div>
-                            <div class="d-flex flex-row absolute book-bottom">
+                            <div class="d-flex flex-row col-md-12 col-sm-12 col-xs-12 " style="padding: 0px;">
                                 <div class="book-bottom-left"></div>
                                 <div class="book-bottom-right"></div>
                             </div>
@@ -65,23 +79,21 @@
             <!-- Steps -->
 
             <!-- Footer -->
-            <div class="row fixed-bottom gradient-bottom pb-1 pl-3 pr-3">
+            <div class="row fixed-bottom gradient-bottom padding-footer">
                 <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="row p-3 justify-content-space-evenly">
+                    <div class="row justify-content-space-evenly margin-progress">
 
-                        <div class="d-flex flex-column pr-1"> 
-                            <div class="absolute step-details-container overflow-auto">
-                                <div class="step-details col-md-4 col-sm-4 col-xs-4 p-2  w-100">
-                                    <div class="d-flex flex-row text-wrap">
-                                        <p class="text-white font-weight-bold">MISE EN PLACE&nbsp;</p>
-                                        <p class="text-white">- Gather Materials</p>
-                                    </div>
+                        <div class="d-flex flex-column pr-2" style="width: 10%;">
+
+                            <div class="absolute step-details-container overflow-auto col-md-3 col-sm-4 col-xs-4  mb-4">
+                                <div class="step-details col-md-12 col-sm-12 col-xs-12 p-4">
+                                    <p class="text-white font-weight-bold">MISE EN PLACE&nbsp; <span>- Gather materials</span></p>
                                     <p class="text-white font-weight-light">
-                                        Line the sheet tray with the parchment. <br/>
+                                        Line the sheet tray with the parchment.
                                         Place wings on the parchment. Season both
-                                        sides with salt mix and pepper. Arrange <br/>
-                                        wings skin down. Let wings dry <br/>
-                                        uncovered for an hour (or up to <br/>
+                                        sides with salt mix and pepper. Arrange
+                                        wings skin down. Let wings dry
+                                        uncovered for an hour (or up to
                                         overnight in the fridge)
 
                                     </p>
@@ -92,10 +104,10 @@
                             <div class="progress-default progress-done"></div>
                         </div>
 
-                        <div class="d-flex flex-column pr-1" style="width: 20%;">
+                        <div class="d-flex flex-column pr-2" style="width: 20%;">
                             <!-- Width should be changed to match the percentage that it's suposed to -->
                             <!-- <p class="text-white">SETUP</p> -->
-                            
+
 
                             <p class="text-white align-self-center progress-text"><i class="fa fa-chevron-down"></i></p>
                             <div class="d-flex flex-row">
@@ -104,13 +116,13 @@
                             </div>
                         </div>
 
-                        <div class="d-flex flex-column pr-1" style="width: 30%;">
+                        <div class="d-flex flex-column pr-2" style="width: 30%;">
                             <!-- Width should be changed to match the percentage that it's suposed to -->
                             <p class="text-white progress-text">COOK</p>
                             <div class="progress-default"></div>
                         </div>
 
-                        <div class="d-flex flex-column pr-1" style="width: 30%;">
+                        <div class="d-flex flex-column pr-2" style="width: 30%;">
                             <!-- Width should be changed to match the percentage that it's suposed to -->
                             <p class="text-white progress-text">BAKE</p>
                             <div class="progress-default"></div>
@@ -122,7 +134,7 @@
                             <div class="progress-default"></div>
                         </div>
                     </div>
-                    <div class="row p-3 d-flex justify-content-space-between">
+                    <div class="row pb-3 d-flex justify-content-space-between">
                         <div class="d-flex flex-row w-50 align-items-center">
                             <p><i class="fa fa-chevron-left text-white bottom-text"></i></p>
                             <p class="bottom-controls pl-2 bottom-text">PREVIEW VIDEO</p>
