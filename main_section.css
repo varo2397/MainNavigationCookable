@@ -190,6 +190,23 @@ body {
 
 }
 
+.close-pop-up {
+    position: absolute;
+    z-index: 100;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border-style: none;
+    top: 13vh;
+    left: 84vw;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media only screen and (max-width: 780px) {
     .progress-text {
         font-size: 10px ;
@@ -303,6 +320,14 @@ body {
     .main-text-optins {
         font-size: 10px;
     }
+
+    .close-pop-up {
+        top: 13vh;
+        left: 84vw;
+        font-size: 15px;
+        width: 20px;
+        height: 20px;
+    }
 }
 
 @media only screen and (max-width: 1000px) and (min-width: 781px){
@@ -367,4 +392,9 @@ body {
     width: 70vw;
     z-index: -100;
     position: absolute;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    object-fit: fill;
 }
+

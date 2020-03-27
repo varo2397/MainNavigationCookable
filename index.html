@@ -23,11 +23,18 @@
 
 <body>
     <div class="pop-up-video-bg-wrapper" id="popUp">
-        <video class="pop-video" loop muted autoplay src="Beer_Pour_Videvo.mp4"></video>
+        <video class="pop-video" loop muted autoplay src="Beer_Pour_Videvo.mp4">
+           
+        </video>
+        <div id="close" class="close-pop-up">
+            <i class="fas fa-times"></i>
+        </div>
     </div>
     <div class="video-bg-wrapper">
 
-        <video loop muted autoplay src="Beer_Pour_Videvo.mp4" class="video-bg"></video>
+        <video loop muted autoplay src="Beer_Pour_Videvo.mp4" class="video-bg">
+            
+        </video>
         <!-- <video loop muted autoplay src="https://res.cloudinary.com/varo2397/video/upload/v1585155412/cookable/Beer_Pour_Videvo_vamm8p.mp4" class="video-bg"></video> -->
     </div>
     <div class="h-100 w-100 absolute">
@@ -177,11 +184,17 @@
     <script>
         const clickElement = document.querySelector('#showPopUp');
         const footer = document.querySelector('#footer');
-        const popUp = document.querySelector('#popUp')
+        const popUp = document.querySelector('#popUp');
+        const closeElement = document.querySelector('#close');
         clickElement.addEventListener('click', (event) => {
             popUp.style.display = 'flex';
             footer.style.filter = 'blur(1px)';
             footer.style.zIndex = '-100';
+        });
+        closeElement.addEventListener('click', event => {
+            popUp.style.display = 'none';
+            footer.style.filter = '';
+            footer.style.zIndex = '';
         })
     </script>
 </body>
