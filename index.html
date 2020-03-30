@@ -59,9 +59,9 @@
                                 <i class="fa fa-lightbulb-on"></i>
                             </div>
                             <p class="text-white text-left  optins-text"><span
-                                    class="font-weight-bold main-text-optins">WATCH  </span>
-                                         or     
-                                    <span class="font-weight-bold main-text-optins">  LISTEN</span>
+                                    class="font-weight-bold main-text-optins">WATCH </span>
+                                or
+                                <span class="font-weight-bold main-text-optins"> LISTEN</span>
                             </p>
                         </div>
 
@@ -69,7 +69,7 @@
                             <div class="center-icon absolute ">
                                 <i class="fa fa-volume-up fa-lg"></i>
                             </div>
-                            <p class="text-white text-left  font-italic optins-text">Set the time to 20
+                            <p class="text-white text-left  font-italic optins-text" id="example">Set the time to 20
                                 minutes</p>
                         </div>
                         <div class="relative ">
@@ -95,8 +95,7 @@
 
                         <div class="d-flex flex-column pr-2" style="width: 10%;">
 
-                            <div
-                                class="absolute  overflow-auto col-lg-4 col-md-5 col-sm-4  step-details-container">
+                            <div class="absolute  overflow-auto col-lg-4 col-md-5 col-sm-4  step-details-container">
                                 <div class="step-details col-md-12 col-sm-12 col-6 padding-instructional">
                                     <p class="text-white instructional-title">MISE EN PLACE&nbsp; <span>- Gather
                                             materials</span></p>
@@ -181,6 +180,11 @@
         const footer = document.querySelector('#footer');
         const popUp = document.querySelector('#popUp');
         const closeElement = document.querySelector('#close');
+        const example = document.querySelector('#example');
+
+        example.addEventListener('click', (event) => { console.log('it woeks') })
+
+
         clickElement.addEventListener('click', (event) => {
             popUp.style.display = 'flex';
             footer.style.filter = 'blur(1px)';
